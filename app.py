@@ -1,4 +1,4 @@
-from flask import Flask, redirect,url_for
+﻿from flask import Flask, redirect,url_for
 from CV.cv_routes import *
 
 app = Flask(__name__)

@@ -1,4 +1,4 @@
-from flask import Blueprint,render_template
+﻿from flask import Blueprint,render_template
 
 cv = Blueprint('cv',__name__,template_folder='templates')
 
