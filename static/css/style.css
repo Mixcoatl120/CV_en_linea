@@ -1,0 +1,12 @@
+body {
+    background-image: url("../image/ama.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100px;
+    margin:0;
+    justify-content:center;
+    align-items:center;
+}
+#principal{
+    background-color: lightgray;
+}

@@ -1,0 +1,24 @@
+﻿{% extends 'Inicio.html' %}
+{% block title %}Mas información - {{super()}}{% endblock %}
+{% block content %}
+<div id="principal" class="container">
+    <div class="row mt-5">
+        <p>
+            Como mencione describiré las tecnologías para la creación de esta página sencilla.
+            Empezare por el backend.El lenguaje que se encargara de todas las operaciones tanto de funciones y de alguno otro calculo para demostración es Python.
+        </p>
+        <div class="col-6 mt-5">
+            <p>
+                Este es un lenguaje de programación muy popular y versátil, se utiliza creación de programas de computadoras como la realización de aplicaciones
+                web como esta página otros usos que se son:
+            </p>
+        </div>
+        <div class="col-6 mt-5">
+            <p>
+                <img src="{{url_for('static', filename='image/th.png')}}"class="rounded mx-auto d-block" alt="Python"/>
+            </p>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
