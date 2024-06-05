@@ -1,0 +1,31 @@
+﻿{% extends 'Inicio.html' %}
+{% block title %}operaciones simples- {{super()}}{% endblock %}
+{% block content %}
+<head>
+</head>
+<body>
+    <form method="post" action="{{url_for('ss.Op')}}">
+        <div id="principal" class="container">
+            <h1 class="mt-5">Ejemplos</h1>
+            <!-- Agrega el bloque para mensajes flash -->
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-success alert-dismissible fade show mt-2 mb-3" role="alert" style="background-color: cornflowerblue; font-family: 'Arial Rounded MT'">
+                {{ message }}
+            </div>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+            <!-- fin del bloque para mensajes flash -->
+            <div class="row">
+                <p> <input name="a" /> + <input name="b" /></p>
+            </div>
+            <input type="submit" value="Realizar operación" />
+            <div class="row mt-3">
+                <!--Da un espacio al final del container-->
+            </div>
+        </div>
+    </form>
+</body>
+{% endblock %}
