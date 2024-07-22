@@ -1,0 +1,23 @@
+.body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.row > input{
+    width:25%;
+    margin:2rem;
+    align-items:center;
+    justify-content:center;
+}
+.principal .row p{
+    margin-top:5px;
+    margin-bottom:3px;
+}
+.enviar{
+    display:block;
+    position:relative;
+    align-items:center;
+    justify-content:center;
+    left:auto;
+    margin:auto;
+    padding:0;
+    width:50%;
+}

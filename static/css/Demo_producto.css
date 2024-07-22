@@ -1,0 +1,109 @@
+﻿header {
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    justify-items: center;
+    z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
+}
+
+#header-img {
+    width: 45px;
+    height: 45px;
+    display: flex;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: linen;
+}
+
+#nav-bar {
+    display: flex;
+    position: relative;
+    top: 0;
+    width: 100%;
+    color: white;
+    justify-content: flex-end;
+}
+
+    #nav-bar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    #nav-bar li {
+        float: left;
+    }
+
+        #nav-bar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            border: 4px solid white;
+            margin-right: 2px;
+            text-decoration: none;
+            border-radius: 5rem;
+        }
+
+            #nav-bar li a:hover {
+                background-color: #e5e5fa;
+                color: black;
+            }
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.space {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.video-content, .form-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+    .form-content > form > #email {
+        width: 500px;
+        height: 35px;
+        border-radius: 4rem;
+    }
+
+    .form-content > form > #submit {
+        height: 35px;
+    }
+
+#form {
+    display: flex;
+    flex-direction: column; /* Alínea los inputs verticalmente */
+    align-items: center; /* Centra los inputs horizontalmente */
+}
+
+    #form input {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin: 1rem;
+    }
+
+@media only screen and (max-height:600px ) {
+    #header-img {
+        background-image: url(https://lofrev.net/wp-content/photos/2016/08/random_logo_1.png);
+        background-size: cover;
+    }
+}

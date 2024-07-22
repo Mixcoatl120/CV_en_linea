@@ -2,28 +2,41 @@
 {% block title %}operaciones simples- {{super()}}{% endblock %}
 {% block content %}
 <head>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/ss.css')}}" />
 </head>
 <body>
     <form method="post" action="{{url_for('ss.Op')}}">
         <div id="principal" class="container">
             <h1 class="mt-5">Ejemplos</h1>
-            <!-- Agrega el bloque para mensajes flash -->
-            {% with messages = get_flashed_messages() %}
-            {% if messages %}
-            {% for message in messages %}
-            <div class="alert alert-success alert-dismissible fade show mt-2 mb-3" role="alert" style="background-color: cornflowerblue; font-family: 'Arial Rounded MT'">
-                {{ message }}
-            </div>
-            {% endfor %}
-            {% endif %}
-            {% endwith %}
-            <!-- fin del bloque para mensajes flash -->
             <div class="row">
-                <p> <input name="a" /> Y <input name="b" /></p>
+                <div class="col">
+                    <p>
+                        Este es un Ejemplo para realizar las 4 operaciones
+                        simples suma, resta, multiplicación y divición
+                    </p>
+                    <p>
+                        Los resultados se mandan por media de un mensaje flash y se procesan en Python
+                    </p>
+                    <p class="ope">Número A: <input class="numero" name="a" required /> </p>
+                    <p class="ope">Número B: <input class="numero" name="b" required /></p>
+                    <input class="enviar" type="submit" value="Realizar operaciónes" />
+                </div>
+                <div class="col">
+                    <!-- Agrega el bloque para mensajes flash -->
+                    {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                    {% for message in messages %}
+                    <div class="alert alert-success alert-dismissible fade show mt-2 mb-3" role="alert" style="background-color: cornflowerblue; font-family: 'Arial Rounded MT'">
+                        {{ message }}
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                    {% endwith %}
+                    <!-- fin del bloque para mensajes flash -->
+                </div>
             </div>
-            <input type="submit" value="Realizar operaciónes" />
-            <div class="row mt-3">
-                <!--Da un espacio al final del container-->
+            <div class="row mt-3"> </div> <!--Da un espacio al final del container-->
+            <div>
             </div>
         </div>
     </form>

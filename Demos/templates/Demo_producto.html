@@ -1,0 +1,32 @@
+﻿<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta chartset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static',filename="css/Demo_producto.css")}}"/>
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <div class="content">
+          <img id="header-img" src="https://th.bing.com/th/id/R.1a551aa4cba59342dff2decfbaa9c8dd?rik=KQTDhx1ZUAAfjA&riu=http%3a%2f%2fpluspng.com%2fimg-png%2flogo-template-png-logo-templates-1655.png&ehk=9MRokJPqMM6lr6AsMn50qqBGQgGuPYXFuTzMFbKjOa8%3d&risl=&pid=ImgRaw&r=0"/>
+          <nav id="nav-bar">
+            <ul>
+              <li><a href="#video" class="nav-link">video</a></li>
+              <li><a href="#form" class="nav-link">formulario</a></li>
+              <li><a href="#email" class="nav-link">Sección 3</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="space">
+        <div class="video-content">
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Pb6KyewC_Vg?si=aGDTrQ-IClMLV7Lp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="form-content">
+          <form id="form" action="/cv">
+            <input type="email" id="email" name="email" placeholder="example@email.com" required/>
+            <input type="submit" id="submit">
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>

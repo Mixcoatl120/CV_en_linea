@@ -13,3 +13,23 @@ body {
     background-color: lightgray;
     border-radius: 10px;
 }
+nav {
+    position: fixed;
+}
+.nav-link {
+    border: 1px solid black;
+    border-radius: 0px 10px 0px 10px;
+    margin-left: 5px;
+    background-color:linen;
+}
+.nav-item .nav-link {
+    left: 2rem;
+    margin-left: 5px;
+    font-family:Arial,sans-serif;
+}
+
+.nav-link:hover {
+    color:white;
+    background-color:gray;
+    border-color:black;
+}
