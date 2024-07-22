@@ -1,5 +1,5 @@
 body {
-    background-color:lightgoldenrodyellow;
+    background-color:linen;
     background-size:cover;
     background-repeat:no-repeat;
     background-position: center;
@@ -32,4 +32,12 @@ nav {
     color:white;
     background-color:gray;
     border-color:black;
+}
+.inicio{
+    width:40px;
+    height:40px;
+}
+.inicio:hover{
+    background-color:aliceblue;
+    border:2px solid white;
 }

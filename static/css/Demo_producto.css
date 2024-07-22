@@ -1,9 +1,9 @@
-﻿header {
+header {
     width: 100%;
-    position: fixed;
+    margin:auto;
+    position: relative;
     align-items: center;
     justify-items: center;
-    z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
 }
 
 #header-img {

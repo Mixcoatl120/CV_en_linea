@@ -7,15 +7,12 @@
 <body>
     <form method="post" action="{{url_for('ss.Op')}}">
         <div id="principal" class="container">
-            <h1 class="mt-5">Ejemplos</h1>
+            <h1 class="mt-5">Operaciones básicas</h1>
             <div class="row">
-                <div class="col">
-                    <p>
-                        Este es un Ejemplo para realizar las 4 operaciones
-                        simples suma, resta, multiplicación y divición
-                    </p>
-                    <p>
-                        Los resultados se mandan por media de un mensaje flash y se procesan en Python
+                <div class="col ">
+                    <p class="info">
+                        Este es un ejemplo para realizar las 4 operaciones simples suma, resta, multiplicación y divición.
+                        Las operaciones se manejan con Python y estas llegan por mensaje flash
                     </p>
                     <p class="ope">Número A: <input class="numero" name="a" required /> </p>
                     <p class="ope">Número B: <input class="numero" name="b" required /></p>
@@ -26,7 +23,7 @@
                     {% with messages = get_flashed_messages() %}
                     {% if messages %}
                     {% for message in messages %}
-                    <div class="alert alert-success alert-dismissible fade show mt-2 mb-3" role="alert" style="background-color: cornflowerblue; font-family: 'Arial Rounded MT'">
+                    <div class="alert alert-success alert-dismissible fade show mt-2 mb-3" role="alert">
                         {{ message }}
                     </div>
                     {% endfor %}

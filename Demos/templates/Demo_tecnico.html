@@ -1,6 +1,7 @@
-﻿<head>
-    <meta charse="UTF-8">
-    <meta>
+﻿{% extends 'base_demo.html' %}
+{% block title %}{{super()}} - Documento Técnico{% endblock %}
+{% block content %}
+<head>
     <link rel="stylesheet" href="{{url_for('static',filename='css/Demo_tecnico.css')}}">
 </head>
 <body>
@@ -13,6 +14,7 @@
                 <li><a class="nav-link" href="#Variables">Variables </a></li>
                 <li><a class="nav-link" href="#Estructuras_de_control">Estructuras de control</a></li>
                 <li><a class="nav-link" href="#Imprime_un_Hola_mundo">Imprime un Hola mundo</a></li>
+                <li><a class="RM" href="/cv">salir de demo</a></li>     
             </ul>
         </nav>
         <section class="main-section" id="¿Qué_es_JavaScript?">
@@ -105,3 +107,4 @@
         </section>
     </main>
 </body>
+{% endblock %}
