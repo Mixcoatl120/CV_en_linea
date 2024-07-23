@@ -9,3 +9,7 @@ def DP():
 @projectos.route("/Demo_tecnico")
 def DT():
     return render_template("Demo_tecnico.html")
+
+@projectos.route("/Demo_homenaje")
+def DH():
+    return render_template("Demo_homenaje.html")

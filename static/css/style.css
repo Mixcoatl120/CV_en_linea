@@ -41,3 +41,14 @@ nav {
     background-color:aliceblue;
     border:2px solid white;
 }
+.container{
+    margin-top:5rem ;
+}
+.dev{
+    width:40px;
+    height:40px;
+    margin-left: 5px ;
+}
+.dev:hover{
+    border: 2px solid white;
+}

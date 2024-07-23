@@ -1,0 +1,25 @@
+{% extends 'Inicio.html' %}
+{% block title %}{{super()}} - Homenaje{% endblock %}
+{% block content %}
+<head>
+    <!--Estilos propios-->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/Demo_homenaje.css')}}">
+  </head>
+  <body>
+    <main id="main">
+      <h1 id="title">Mi gato Dante</h1>
+      <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img id="image" src="{{url_for('static',filename='image/Dante/DanteP.jpeg')}}">    
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
+                    <img id="image" src="{{url_for('static',filename='image/Dante/FSCN0128.jpg')}}">
+                </div>
+            </div>
+        </div>
+    </main>
+  <body>
+{% endblock%}
