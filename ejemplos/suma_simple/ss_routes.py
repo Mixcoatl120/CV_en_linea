@@ -1,4 +1,5 @@
 ﻿from flask import Blueprint, redirect,render_template, request,url_for,flash
+from dbmodel import *
 
 ss = Blueprint('ss',__name__,template_folder='templates')
 
@@ -22,3 +23,15 @@ def Op():
             
         return redirect(url_for('ss.SS',a=a,b=b))
    
+@ss.route("/agenda",methods=['POST'])
+def Agenda():
+    res = names.query.all()
+    for i in res:
+        print("ID:",i.id,"|| Name:" ,i.name)
+    if request.method == 'POST':
+        insert = names(id=None,name='maria')
+        db.session.add(insert)
+        db.session.commit()
+        db.session.close()    
+        return render_template('agenda.html',)
+    

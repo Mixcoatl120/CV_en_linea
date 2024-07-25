@@ -3,6 +3,14 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 4rem;
 }
+.dante{
+    margin: 2rem;
+    border-radius: 5px;
+    background:repeating-radial-gradient(#F0EAD6,#4B3621)
+}
+.container{
+    margin-bottom:2rem ;
+}
 #title{
     text-align: center;
     align-items: center;
@@ -14,4 +22,37 @@ body{
     height: 400px;
     border-radius:10px ;
 }
+.img.col{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.info_dante{
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
 
+/*media*/
+@media only screen and (max-height:700px) {
+    #image{
+        width: 300px;
+        height: 300px;
+        border-radius:10px ;
+    }
+    
+}
+@media only screen and (max-height:500px) {
+    #image{
+        width: 200px;
+        height: 2000px;
+    }
+}
+@media only screen and (max-width:450px) {
+    #image{
+        width: 100px;
+        height: 100px;
+    }
+}

@@ -1,4 +1,5 @@
-﻿from flask import Blueprint, redirect,render_template, request,url_for,flash
+from flask import Blueprint, redirect,render_template, request,url_for,flash
+from dbmodel import *
 
 projectos = Blueprint('projectos',__name__,template_folder='templates')
 
