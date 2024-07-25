@@ -9,16 +9,46 @@
     <main id="main">
       <h1 id="title">Mi gato Dante</h1>
       <div class="container">
-            <div class="row">
-                <div class="col">
-                    <img id="image" src="{{url_for('static',filename='image/Dante/DanteP.jpeg')}}">    
+            <div class="dante row">
+                <div class="img col">
+                    <img id="image" src="{{url_for('static',filename='image/Dante/DanteP.jpeg')}}" loading="lazy">    
                 </div>
                 <div class="col">
+                    <p class="info_dante"><strong>Actualmente tiene 9 años.</strong></p>
+                    <p class="info_dante">
+                        Es un gato ya grande siempre ha sido muy gruñón, aun me acuerdo 
+                        el día que llego a casa me mordió al intentarlo acariciar.
+                    </p>
+                    <p class="info_dante">
+                        A su <---- izquierda pueden ver cuando recién llego a la casa era muy lindo, 
+                        como gato de meses parecía que no haría tantas travesuras.   
+                    </p>
+                    <p class="info_dante">
+                        ya que Actualmente se ve como a su derecha --->, un gato ya grande con algunas 
+                        actitudes como de cualquier otro gato.
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <ul> 
+                                <li>Gruñón</li>
+                                <li>Gritón </li>
+                                <li>Exigente</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul>
+                                <li>Celoso</li>
+                                <li>Chismoso</li>
+                                <li>Mimado</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
-                    <img id="image" src="{{url_for('static',filename='image/Dante/FSCN0128.jpg')}}">
+                <div class="img col" >
+                    <img id="image" src="{{url_for('static',filename='image/Dante/FSCN0128.jpg')}}" loading="lazy">
                 </div>
             </div>
+            <div class="row"></div><!--Div de espacio-->
         </div>
     </main>
   <body>
