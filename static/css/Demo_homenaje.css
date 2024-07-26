@@ -6,10 +6,6 @@ body{
 .dante{
     margin: 2rem;
     border-radius: 5px;
-    background:repeating-radial-gradient(#F0EAD6,#4B3621)
-}
-.container{
-    margin-bottom:2rem ;
 }
 #title{
     text-align: center;
@@ -33,6 +29,9 @@ body{
     align-items: center;
     justify-content: center;
     display: flex;
+}
+h2{
+    text-align: center;
 }
 
 /*media*/

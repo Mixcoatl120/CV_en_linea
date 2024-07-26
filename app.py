@@ -1,7 +1,6 @@
 from flask import Flask, redirect,url_for
 from CV.cv_routes import *
 from info.info_routes import *
-from ejemplos.suma_simple.ss_routes import *
 from Demos.projectos_routes import *
 from dbmodel import *
 from dotenv import load_dotenv
@@ -18,12 +17,11 @@ db.init_app(app)
 
 @app.route('/')
 def index():
-    return redirect(url_for('cv.CV'))
+    return redirect(url_for('home.Home'))
 
 #registro de blueprints
-app.register_blueprint(cv) #carpeta de cv
+app.register_blueprint(home) #carpeta de cv
 app.register_blueprint(info) # Carpeta de información
-app.register_blueprint(ss) # carpeta de ejemplos sumas simples
 app.register_blueprint(projectos)# carpeta de proyectos
 
 if __name__ == '__main__':

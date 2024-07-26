@@ -11,53 +11,36 @@
     <link rel="shortcut icon" href="{{url_for('static',filename='image/icon.ico')}}" />    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg"  style="background-color: #64A1FF">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{{url_for('cv.CV')}}">
-                <img class="inicio" src="https://th.bing.com/th/id/OIG2.suXKvFX2SNV1JerECt6f?w=1024&h=1024&rs=1&pid=ImgDetMain"/>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/info">Mas información</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Ejemplos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{url_for('ss.SS')}}">operaciones simples</a></li>
-                            <li><a class="dropdown-item" href="#"></a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#"></a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Projectos y/o Demos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/Demo_homenaje">Demo homenaje</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/Demo_producto">Demo de Producto</a></li>
-                            <li><a class="dropdown-item" href="/Demo_tecnico">Demo Tecnico</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#info_dev">
-                            <img
-                                class="dev" 
-                                src="/static/image/escudoy espada.png"  
-                                alt="dev">
-                        </a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar bg-dark fixed-top navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{{url_for('home.Home')}}">
+                    <img class="image" src="{{url_for('static',filename='image/escudoy espada.png')}}"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/info">Mas información</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Demos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/Demo_homenaje">Demo homenaje</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="/Demo_producto">Demo de Producto</a></li>
+                                <li><a class="dropdown-item" href="/Demo_tecnico">Demo Tecnico</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     {% block content %}{%endblock%}
 </body>
 </html>
