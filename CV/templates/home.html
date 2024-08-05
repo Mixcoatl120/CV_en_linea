@@ -1,5 +1,8 @@
 ﻿{% extends 'Inicio.html' %}
 {% block title %}Inicio - {{super()}}{% endblock %}
+{%block head%}
+<link rel="stylesheet" href="{{url_for('static',filename='css/home.css')}}">
+{%endblock%}
 {% block content %}
 <main class="main">
     <h1>Bienvenidos</h1>
