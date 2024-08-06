@@ -8,10 +8,10 @@
   <body>
     <main class="main">
       <div class="container">
-        <h1 id="title">Mi gato Dante</h1>
+        <h1 id="title">Dante</h1>
             <div class="dante row">
                 <div class="img col">
-                    <img id="image" src="{{url_for('static',filename='image/Dante/DanteP.jpeg')}}" loading="lazy">    
+                    <img id="image" src="{{url_for('static', filename='image/Dante/g1.webp')}}" loading="lazy">  
                 </div>
                 <div class="col">
                     <p class="info_dante"><strong>Actualmente tiene 9 años.</strong></p>
@@ -28,14 +28,14 @@
                         actitudes como de cualquier otro gato.
                     </p>
                     <div class="row">
-                        <div class="col">
+                        <div class="info_dante col">
                             <ul> 
                                 <li>Gruñón</li>
                                 <li>Gritón </li>
                                 <li>Exigente</li>
                             </ul>
                         </div>
-                        <div class="col">
+                        <div class="info_dante col">
                             <ul>
                                 <li>Celoso</li>
                                 <li>Chismoso</li>
@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="img col" >
-                    <img id="image" src="{{url_for('static',filename='image/Dante/FSCN0128.jpg')}}" loading="lazy">
+                    <img id="image" src="{{url_for('static',filename='image/Dante/g2.webp')}}" loading="lazy">
                 </div>
             </div>
             <div class="row">
@@ -56,6 +56,14 @@
                         pecho y ronronea para poder dormir a mi lado. 
                     </p>
                     <h2>Galería</h2>
+                    <section>
+                        <div>
+                            <img class="DG" src="{{url_for('static', filename='image/Dante/d1.webp')}}" alt="Dante 1">
+                            <img class="DG" src="{{url_for('static', filename='image/Dante/d2.webp')}}" alt="Dante 2">
+                            <img class="DG" src="{{url_for('static', filename='image/Dante/d3.webp')}}" alt="Dante 3">
+                            <img class="DG" src="{{url_for('static', filename='image/Dante/d4.webp')}}" alt="Dante 4">
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>

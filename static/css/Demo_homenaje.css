@@ -6,6 +6,10 @@ body{
 .dante{
     margin: 2rem;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 #title{
     text-align: center;
@@ -14,8 +18,8 @@ body{
     display: flex;
 }
 #image{
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     border-radius:10px ;
 }
 .img.col{
@@ -26,32 +30,26 @@ body{
 }
 .info_dante{
     text-align: justify;
-    align-items: center;
-    justify-content: center;
     display: flex;
+    font-size: medium;
 }
 h2{
     text-align: center;
 }
+section div{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-/*media*/
-@media only screen and (max-height:700px) {
-    #image{
-        width: 300px;
-        height: 300px;
-        border-radius:10px ;
-    }
-    
 }
-@media only screen and (max-height:500px) {
-    #image{
-        width: 200px;
-        height: 2000px;
-    }
-}
-@media only screen and (max-width:450px) {
-    #image{
-        width: 100px;
-        height: 100px;
-    }
+.DG{
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    height: auto;
+    border-radius: 10px; 
+
 }
