@@ -10,8 +10,8 @@ import os
 load_dotenv()
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('SQLALCHEMY_DATABASE_URI')
+app.config['SECRET_KEY'] = 'Mixcoatl120'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres.bfmehanvxfbspoksbbai:Mixcoatl120.@aws-0-us-west-1.pooler.supabase.com/postgres'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
