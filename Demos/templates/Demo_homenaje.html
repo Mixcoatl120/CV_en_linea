@@ -1,72 +1,59 @@
 {% extends 'Inicio.html' %}
 {% block title %}{{super()}} - Homenaje{% endblock %}
+{%block head%}
+<link rel="stylesheet" href="{{url_for('static',filename='css/Demo_homenaje.css')}}"><!--Estilos de Homenaje-->
+{%endblock%}
 {% block content %}
-<head>
-    <!--Estilos propios-->
-    <link rel="stylesheet" href="{{url_for('static',filename='css/Demo_homenaje.css')}}">
-  </head>
-  <body>
-    <main class="main">
-      <div class="container">
-        <h1 id="title">Dante</h1>
-            <div class="dante row">
-                <div class="img col">
-                    <img id="image" src="{{url_for('static', filename='image/Dante/g1.webp')}}" loading="lazy">  
-                </div>
-                <div class="col">
-                    <p class="info_dante"><strong>Actualmente tiene 9 años.</strong></p>
-                    <p class="info_dante">
-                        Es un gato ya grande siempre ha sido muy gruñón, aun me acuerdo 
-                        el día que llego a casa me mordió al intentarlo acariciar.
-                    </p>
-                    <p class="info_dante">
-                        A su <---- izquierda pueden ver cuando recién llego a la casa era muy lindo, 
-                        como gato de meses parecía que no haría tantas travesuras.   
-                    </p>
-                    <p class="info_dante">
-                        ya que Actualmente se ve como a su derecha --->, un gato ya grande con algunas 
-                        actitudes como de cualquier otro gato.
-                    </p>
-                    <div class="row">
-                        <div class="info_dante col">
-                            <ul> 
-                                <li>Gruñón</li>
-                                <li>Gritón </li>
-                                <li>Exigente</li>
-                            </ul>
-                        </div>
-                        <div class="info_dante col">
-                            <ul>
-                                <li>Celoso</li>
-                                <li>Chismoso</li>
-                                <li>Mimado</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="img col" >
-                    <img id="image" src="{{url_for('static',filename='image/Dante/g2.webp')}}" loading="lazy">
-                </div>
+<main class="main">
+    <div class="container">
+    <h1 id="title">Dante</h1>
+        <div class="dante row">
+            <div class="img col">
+                <img id="image" src="{{url_for('static', filename='image/Dante/g1.webp')}}" loading="lazy">  
             </div>
-            <div class="row">
-                <div>
-                    <p>
-                        Para mi es la mejor mascota que he tenido ya que siempre esta hay, me ha demostrado que es muy fiel tiene sus actitudes como
-                        mencione anteriormente, cada gato tiene una forma de alegrarnos el día, para mi es cuando me voy a dormir el se pone en mi 
-                        pecho y ronronea para poder dormir a mi lado. 
-                    </p>
-                    <h2>Galería</h2>
-                    <section>
-                        <div>
-                            <img class="DG" src="{{url_for('static', filename='image/Dante/d1.webp')}}" alt="Dante 1">
-                            <img class="DG" src="{{url_for('static', filename='image/Dante/d2.webp')}}" alt="Dante 2">
-                            <img class="DG" src="{{url_for('static', filename='image/Dante/d3.webp')}}" alt="Dante 3">
-                            <img class="DG" src="{{url_for('static', filename='image/Dante/d4.webp')}}" alt="Dante 4">
-                        </div>
-                    </section>
-                </div>
+            <div class="col">
+                <p class="info_dante">
+                    El es mi gato "Dante" es la primer mascota que tuve, ha estado desde la preparatoria conmigo
+                    
+                </p>
+                <p class="info_dante">
+                    Aun recuerdo cuando mi abuelo lo trajo , el estaba muy asustado y por instinto al momento de
+                    quererlo acariciar me mordió mi dedo indice , entendí que estaba demasiado asustado.
+                    Estaba en un lugar desconocido, aun así se adapto muy bien 
+                    (Le gusto la atención que le daba la familia :) ) 
+                </p>
+                <p class="info_dante">
+
+                </p>
+            </div>
+            <div class="img col" >
+                <img id="image" src="{{url_for('static',filename='image/Dante/g2.webp')}}" loading="lazy">
             </div>
         </div>
-    </main>
-  <body>
+        <div class="row">
+            <div>
+                <p>
+                    Algunos datos extras de el son:
+
+                    <ul>
+                        <li>Su cumpleaños el el 25 de marzo de 2015</li>
+                        <li>Se enoja por todo y por nada</li>
+                        <li>Es celoso</li>
+                        <li>los sobres que mas le gustan son los whiskas</li>
+                        <li>Actualmente tiene 9 años (a 06/08/2024)</li>
+                    </ul>
+                </p>
+                <h2>Galería</h2>
+                <section>
+                    <div>
+                        <img class="DG" src="{{url_for('static', filename='image/Dante/d1.webp')}}" alt="Dante 1">
+                        <img class="DG" src="{{url_for('static', filename='image/Dante/d2.webp')}}" alt="Dante 2">
+                        <img class="DG" src="{{url_for('static', filename='image/Dante/d3.webp')}}" alt="Dante 3">
+                        <img class="DG" src="{{url_for('static', filename='image/Dante/d4.webp')}}" alt="Dante 4">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
 {% endblock%}

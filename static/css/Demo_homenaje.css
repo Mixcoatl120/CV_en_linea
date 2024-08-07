@@ -31,7 +31,7 @@ body{
 .info_dante{
     text-align: justify;
     display: flex;
-    font-size: medium;
+    font-size: smaller;
 }
 h2{
     text-align: center;

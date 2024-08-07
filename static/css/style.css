@@ -12,23 +12,32 @@ nav {
 .nav-item .nav-link {
     left: 2rem;
     margin-left: 5px;
+    background-color: #fff;
 }
 .nav-link {
     border: 1px solid black;
     border-radius: 10px 10px 0px 0px;
     margin-left: 5px;
-    background-color:#fff;
+    color: #000;
 }
 .nav-link:hover {
     color:white;
     background-color:gray;
     border-color:black;
 }
+.nav-item .nav-link.active{
+    color: #000;
+}
+
 .image{
     width:70px;
     height:70px;
 }
+.image:active{
+    background-color: gray;
+}
 .image:hover{
     border: 5px solid #fff;
+    border-radius: 50%;
 }
 
