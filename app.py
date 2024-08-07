@@ -5,6 +5,7 @@ from Demos.projectos_routes import *
 from dbmodel import *
 
 app = Flask(__name__)
+
 app.config['SECRET_KEY'] = "Mixcoatl120"
 app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres.bfmehanvxfbspoksbbai:Mixcoatl120.@aws-0-us-west-1.pooler.supabase.com/postgres"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
