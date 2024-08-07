@@ -1,62 +1,64 @@
 ﻿{% extends 'Inicio.html' %}
 {% block title %}Mas información - {{super()}}{% endblock %}
 {% block content %}
-<div id="principal" class="container">
-    <h1 class="mt-5">Mas información del proyecto</h1>
-    <div class="row mt-5">
-        <p style="background-color:honeydew">
-            Como mencione describiré las tecnologías para la creación de esta página sencilla.
-            Empezare por el backend.El lenguaje que se encargara de todas las operaciones tanto de funciones y de alguno otro calculo para demostración es Python.
-        </p>
-        <div class="col-4 mt-5">
-            <p>
-                <img src="{{url_for('static', filename='image/th.png')}}" class="rounded mx-auto d-block" alt="Python" />
+<main class="main">
+    <div class="container">
+        <h1 class="mt-5">Mas información del proyecto</h1>
+        <div class="row mt-5">
+            <p style="background-color:honeydew">
+                Como mencione describiré las tecnologías para la creación de esta página sencilla.
+                Empezare por el backend.El lenguaje que se encargara de todas las operaciones tanto de funciones y de alguno otro calculo para demostración es Python.
             </p>
+            <div class="col-4 mt-5">
+                <p>
+                    <img src="{{url_for('static', filename='image/th.png')}}" class="rounded mx-auto d-block" alt="Python" />
+                </p>
+            </div>
+            <div class="col-8 mt-5">
+                <p>
+                    Este es un lenguaje de programación muy popular y versátil, se utiliza creación de programas de computadoras como la realización de aplicaciones
+                    web, automatizacion de tareas y analizis de datos .Incluso es el más usado en la industria para la cracion de IA's y Machine learning.
+                </p>
+                <p>
+                    La versión de Python que esta ejecutando esta version web es Python 3.11.
+                </p>
+            </div>
         </div>
-        <div class="col-8 mt-5">
+        <div class="row">
+            <h3>1-Flask</h3>
+            <div class="col">
+                <p>
+                    El framework que se utiliza para que esta aplicación web pueda funcionar es el llamado FLASK.
+                </p>
+                <img src="{{url_for('static',filename='image/Flask.jpeg')}}" width="100" height="100" class="rounded mx-auto d-block" />
+            </div>
+            <div class="col" style="background-color:honeydew">
+                <p>¿Qué es Flaks?</p>
+                <p>
+                    Flask es un framework minimalista, el cual está basado en Python lo cual tiene como objetivo la creación de aplicaciones web bajo el patrón MVC(Modelo-Vista-Controlador).
+                    Como mencione este se basa en Python, pero también depende de un kit de herramientas WSGI de werkzeng, el motor de platillas jinja y el kit de CLIC
+                </p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <h3>2-Bootstrap</h3>
             <p>
-                Este es un lenguaje de programación muy popular y versátil, se utiliza creación de programas de computadoras como la realización de aplicaciones
-                web, automatizacion de tareas y analizis de datos .Incluso es el más usado en la industria para la cracion de IA's y Machine learning.
+                Para los diseños estare usando bootstrap
             </p>
-            <p>
-                La versión de Python que esta ejecutando esta version web es Python 3.11.
-            </p>
+            <div class="col" style="background-color:honeydew">
+                <p>
+                    Bootstrap es un conjunto de herramientas de código abierto para el diseño de aplicaciones web y sitios.
+                    Este framework multiplataforma contiene varias herramientas como botones, formularios, tipografías,etc.Esto facilitara a la hora de crear algun
+                    folmulario o una función para la página.
+                </p>
+            </div>
+            <div class="col">
+                <img src="{{url_for('static',filename='image/bootstrap.png')}}" width="135" height="100" class="rounded mx-auto d-block" />
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <h3>1-Flask</h3>
-        <div class="col">
-            <p>
-                El framework que se utiliza para que esta aplicación web pueda funcionar es el llamado FLASK.
-            </p>
-            <img src="{{url_for('static',filename='image/Flask.jpeg')}}" width="100" height="100" class="rounded mx-auto d-block" />
-        </div>
-        <div class="col" style="background-color:honeydew">
-            <p>¿Qué es Flaks?</p>
-            <p>
-                Flask es un framework minimalista, el cual está basado en Python lo cual tiene como objetivo la creación de aplicaciones web bajo el patrón MVC(Modelo-Vista-Controlador).
-                Como mencione este se basa en Python, pero también depende de un kit de herramientas WSGI de werkzeng, el motor de platillas jinja y el kit de CLIC
-            </p>
-        </div>
-    </div>
-    <div class="row mt-3">
-        <h3>2-Bootstrap</h3>
-        <p>
-            Para los diseños estare usando bootstrap
-        </p>
-        <div class="col" style="background-color:honeydew">
-            <p>
-                Bootstrap es un conjunto de herramientas de código abierto para el diseño de aplicaciones web y sitios.
-                Este framework multiplataforma contiene varias herramientas como botones, formularios, tipografías,etc.Esto facilitara a la hora de crear algun
-                folmulario o una función para la página.
-            </p>
-        </div>
-        <div class="col">
-            <img src="{{url_for('static',filename='image/bootstrap.png')}}" width="135" height="100" class="rounded mx-auto d-block" />
-        </div>
-    </div>
 
-    <div class="row mt-3"><!--Da un espacio al final del container-->
+        <div class="row mt-3"><!--Da un espacio al final del container-->
+        </div>
     </div>
-</div>
+</main>
 {% endblock %}

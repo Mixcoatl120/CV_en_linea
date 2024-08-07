@@ -1,54 +1,43 @@
 body {
-    background-color:linen;
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position: center;
-    height:100vh;
-    margin:0;
-    justify-content:center;
-    align-items:center;
-    
+    background: linear-gradient(45deg,#000,#460707);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
 }
-#principal {
-    background-color: lightgray;
-    border-radius: 10px;
+.main{
+    margin-top: 6rem;
 }
 nav {
     position: fixed;
 }
-.nav-link {
-    border: 1px solid black;
-    border-radius: 0px 10px 0px 10px;
-    margin-left: 5px;
-    background-color:linen;
-}
 .nav-item .nav-link {
     left: 2rem;
     margin-left: 5px;
-    font-family:Arial,sans-serif;
+    background-color: #fff;
 }
-
+.nav-link {
+    border: 1px solid black;
+    border-radius: 10px 10px 0px 0px;
+    margin-left: 5px;
+    color: #000;
+}
 .nav-link:hover {
     color:white;
     background-color:gray;
     border-color:black;
 }
-.inicio{
-    width:40px;
-    height:40px;
+.nav-item .nav-link.active{
+    color: #000;
 }
-.inicio:hover{
-    background-color:aliceblue;
-    border:2px solid white;
+
+.image{
+    width:70px;
+    height:70px;
 }
-.container{
-    margin-top:5rem ;
+.image:active{
+    background-color: gray;
 }
-.dev{
-    width:40px;
-    height:40px;
-    margin-left: 5px ;
+.image:hover{
+    border: 5px solid #fff;
+    border-radius: 50%;
 }
-.dev:hover{
-    border: 2px solid white;
-}
+
