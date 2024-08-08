@@ -35,7 +35,6 @@ nav {
 }
 .image:active{
     background-color: gray;
-    color: red;
 }
 .image:hover{
     border: 5px solid #fff;
